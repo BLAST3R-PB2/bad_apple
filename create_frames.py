@@ -20,8 +20,8 @@ while True:
     if not ret:
         break  # Exit the loop if there are no frames left
 
-    # save the frames at 5fps
-    if frame_count % 6 == 0:
+    # save the frames at a certain frame rate
+    if frame_count % (30//config.FRAME_RATE) == 0:
         # Resize the frame
         resized_frame = cv2.resize(frame, (config.ASPECT_RATIO_WIDTH, config.ASPECT_RATIO_HEIGHT))
 
