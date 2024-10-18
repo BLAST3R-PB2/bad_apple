@@ -10,7 +10,7 @@ Check out the YouTube video showcasing the "Bad Apple" animation in Plazma Burst
 
 ## Features
 
-- Extract frames from a video at 5 frames per second (fps).
+- Extract frames from a video at your desired FPS.
 - Categorize pixels in each frame as either black or white.
 - Generate a PB2-compatible map in XML format based on the pixel data.
 - Customizable aspect ratio and frame rate for the frame extraction and mapping process.
@@ -19,7 +19,7 @@ Check out the YouTube video showcasing the "Bad Apple" animation in Plazma Burst
 
 - `create_frames.py`: Script to extract frames from the video and categorize pixels.
 - `create_pb2_map.py`: Script to generate the PB2 map from categorized pixel data.
-- `config.py`: Configuration file to set the aspect ratio and frame rate.
+- `config.py`: Configuration file to set the aspect ratio, pixel size, and frame rate.
 - `bad_apple.mp4`: Input video file for frame extraction.
 
 ## Installation
@@ -54,15 +54,17 @@ The extracted frames will be saved in the `frames` directory, and the categorize
 You can adjust the aspect ratio in the `config.py` file:
 
 ```python
-SCREEN_SIZE = 7
-FRAME_RATE = 15 # frames per second
+SCREEN_SIZE = 12
+PIXEL_SIZE = 8
+FRAME_RATE = 10 # frames per second
+
 ASPECT_RATIO_WIDTH = 4 * SCREEN_SIZE
 ASPECT_RATIO_HEIGHT = 3 * SCREEN_SIZE
 ```
 
 #### Note: 
 
-From my experience, due to PB2's limitations, it's only possible to load & play maps up to **50MB** in size.
+From my experience, due to PB2's limitations, it's only possible to load & play maps up to **25MB** in size.
 The map will fail to load and the game will throw an error if the `bad_apple_map.xml` file is too large.
 
 ## Contributing
