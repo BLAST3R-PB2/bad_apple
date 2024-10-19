@@ -1,5 +1,7 @@
 # PB2 Video to Map Converter
 
+![map_preview_jpg](https://github.com/user-attachments/assets/75ce87eb-9a9e-4f91-b9fd-8b04f75d863b)
+
 This project converts a video file (specifically "bad_apple.mp4") into a series of frames and generates a map file for Plazma Burst 2 (PB2) based on the pixel data from these frames. The project includes scripts for frame extraction, pixel categorization, and XML map generation.
 
 ## Video Showcase
