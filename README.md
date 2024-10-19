@@ -58,7 +58,7 @@ You can adjust the aspect ratio in the `config.py` file:
 ```python
 SCREEN_SIZE = 12
 PIXEL_SIZE = 8
-FRAME_RATE = 10 # frames per second
+FRAME_RATE = 30 # frames per second
 
 ASPECT_RATIO_WIDTH = 4 * SCREEN_SIZE
 ASPECT_RATIO_HEIGHT = 3 * SCREEN_SIZE
